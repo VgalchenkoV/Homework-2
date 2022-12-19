@@ -79,6 +79,5 @@ public class Main {
         var numberOfEmployees = workingHours + 94;
         var canBeShared = time / numberOfEmployees;
         System.out.println("Если в компании работает " + numberOfEmployees + " человека, то всего "+ canBeShared + " часов работы может быть поделено между сотрудниками");
-
     }
 }
