@@ -59,16 +59,11 @@ public class Main {
         var weiSecBox = 82.7;
         var totalWeight = weiFirBox + weiSecBox;
         System.out.println("Общий вес двух бойцов: " + totalWeight);
+        //Задача 7
         var weightDifference = weiSecBox - weiFirBox;
         System.out.println("Разница в весе бойцов: " + weightDifference);
-        /*Задача 7
-        Согласно задаче, необходимо:
-        Вычитание из большего веса меньшего.
-        Ранее я проделал данную операцию.  var weightDifference = weiSecBox - weiFirBox; */
-        var remainder = (weiSecBox + weiFirBox) % weightDifference;
+        var remainder = weiSecBox % weiFirBox;
         System.out.println("Остаток от делания " + remainder);
-
-
     }
     public static void task4 () {
         System.out.println("Задача 8");
@@ -76,7 +71,7 @@ public class Main {
         var workingHours = 8;
         var totalEmployees = time / workingHours;
         System.out.println("Всего работников в компании — " + totalEmployees + " человек");
-        var numberOfEmployees = workingHours + 94;
+        var numberOfEmployees = totalEmployees + 94;
         var canBeShared = time / numberOfEmployees;
         System.out.println("Если в компании работает " + numberOfEmployees + " человека, то всего "+ canBeShared + " часов работы может быть поделено между сотрудниками");
 
